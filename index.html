@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do not block JavaScript</title>
+    <style>
+        #page {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style-type: none;
+            padding: 10px 5px;
+            width: 1000px;
+            margin: 20px auto 0;
+            border-radius: 5px;
+            background-color: lightgrey;
+        }
+
+        #list>li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: lightgrey;
+            background-color: white;
+            border-radius: 5px;
+            margin: 5px;
+            height: 30px;
+            width: 10%;
+            transition: background-color .2s linear, color .2s linear;
+        }
+
+        #list>li:hover {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="page">
+    <ul id="list"></ul>
+    <script src="./main.js"></script>
+</body>
+
+</html>
